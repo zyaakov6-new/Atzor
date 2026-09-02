@@ -101,6 +101,14 @@ fun AtzorRoot() {
                 onDone = { Store.setOnboarded() },
             )
             !state.quickStartSeen -> QuickStartScreen(modifier = mod, onDone = {})
+            !state.tapInstructionSeen -> KeysScreen(
+                modifier = mod,
+                firstRun = true,
+                onBack = {
+                    UiBus.nfcRegisterMode.value = false
+                    Store.setTapInstructionSeen()
+                },
+            )
             screen == Screen.Home -> HomeScreen(
                 modifier = mod,
                 onPickApps = { screen = Screen.Apps },

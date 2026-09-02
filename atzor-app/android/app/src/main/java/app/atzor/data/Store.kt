@@ -128,6 +128,8 @@ data class AtzorState(
     val onboarded: Boolean = false,
     /** The one-time "pick a few common apps and lock immediately" screen has been shown. */
     val quickStartSeen: Boolean = false,
+    /** The skippable first-run NFC tap step after Quick Start has been shown. */
+    val tapInstructionSeen: Boolean = false,
     /**
      * While locked: guard the accessibility screen, app info, and the package
      * installer, so עצור cannot be switched off or removed mid-session. The
@@ -414,6 +416,7 @@ object Store {
     private val KEY_QR = stringPreferencesKey("qr_secret")
     private val KEY_ONBOARDED = booleanPreferencesKey("onboarded")
     private val KEY_QUICK_START_SEEN = booleanPreferencesKey("quick_start_seen")
+    private val KEY_TAP_INSTRUCTION_SEEN = booleanPreferencesKey("tap_instruction_seen")
     private val KEY_STRICT = booleanPreferencesKey("strict_mode")
     private val KEY_SHABBAT = booleanPreferencesKey("shabbat_mode")
     private val KEY_GENTLE = booleanPreferencesKey("gentle_mode")
@@ -487,6 +490,9 @@ object Store {
             qrSecret = prefs[KEY_QR],
             onboarded = prefs[KEY_ONBOARDED] ?: false,
             quickStartSeen = prefs[KEY_QUICK_START_SEEN] ?: false,
+            // Already-paired installs skip the new first-run tap step.
+            tapInstructionSeen = prefs[KEY_TAP_INSTRUCTION_SEEN]
+                ?: (prefs[KEY_TAGS] ?: prefs[KEY_TAG]?.let { setOf(it) } ?: emptySet()).isNotEmpty(),
             // Off for new installs only. Anyone who already ran the app has an
             // explicit value stored (update() writes every key), so existing
             // users keep whatever they had.
@@ -658,6 +664,7 @@ object Store {
                 next.qrSecret?.let { prefs[KEY_QR] = it } ?: prefs.remove(KEY_QR)
                 prefs[KEY_ONBOARDED] = next.onboarded
                 prefs[KEY_QUICK_START_SEEN] = next.quickStartSeen
+                prefs[KEY_TAP_INSTRUCTION_SEEN] = next.tapInstructionSeen
                 prefs[KEY_STRICT] = next.strictMode
                 prefs[KEY_SHABBAT] = next.shabbatMode
                 prefs[KEY_GENTLE] = next.gentleMode
@@ -908,6 +915,10 @@ object Store {
     fun setQuickStartSeen() = update {
         Analytics.logOnboardingCompleted(stepReached = 2)
         it.copy(quickStartSeen = true)
+    }
+
+    fun setTapInstructionSeen() = update {
+        it.copy(tapInstructionSeen = true)
     }
 
     fun setStrictMode(on: Boolean) = update { it.copy(strictMode = on) }

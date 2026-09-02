@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  English copy, and the default: Android falls back here for every device
+  language that is not Hebrew. Hebrew lives in values-iw/.
+
+  Voice: spoken English, second person, never a literal translation of the
+  Hebrew. Position: willpower does not work, and Atzor does not ask for any.
+  The copy and the mechanism have to back each other up, so nothing here may
+  promise behavior the app does not actually implement.
+  Never use em-dashes. Regular hyphens only.
+-->
+<resources>
+
+    <!-- App / system -->
+    <string name="app_name">Atzor</string>
+    <string name="accessibility_service_label">Atzor · App blocking</string>
+    <string name="accessibility_service_description">Atzor uses the accessibility service only to know which app is open, so it can block what you chose while a lock is running. It does not read screen content, keystrokes or messages. Nothing is sent anywhere.</string>
+    <string name="shortcut_hour_short">Lock for an hour</string>
+    <string name="shortcut_hour_long">Lock for one hour</string>
+    <string name="shortcut_key_short">Until tag/code</string>
+    <string name="shortcut_key_long">Lock until you open it with a tag or code</string>
+    <string name="widget_description">Atzor - quick lock and countdown</string>
+
+    <!-- Onboarding -->
+    <string name="onb_title">Willpower runs out.\nA vault does not.</string>
+    <string name="onb_body">Most apps ask you to hold back at exactly the hardest moment. Atzor asks nothing of you, it simply does not let the app open. For that, Android needs the Accessibility permission, once.</string>
+    <string name="onb_step_1">Tap the button below</string>
+    <string name="onb_step_2">Find \"Atzor · App blocking\"</string>
+    <string name="onb_step_3">Turn it on and confirm</string>
+    <string name="onb_privacy">Privacy: Atzor sees only which app is open. Not content, not keystrokes, not messages. Nothing leaves your phone.</string>
+    <string name="onb_open_settings">Open accessibility settings</string>
+    <string name="onb_continue">Let\'s start</string>
+
+    <!-- Quick start -->
+    <string name="qs_title">What should we lock?</string>
+    <string name="qs_body">Pick whatever eats your day. You do not have to promise yourself you will resist, that is the whole point of Atzor.</string>
+    <string name="qs_loading">Loading…</string>
+    <string name="qs_none_found">None of the usual apps are installed here. No problem, pick them by hand on the next screen.</string>
+    <string name="qs_lock_30">Lock for 30 minutes</string>
+    <string name="qs_later">Later, I will choose myself</string>
+
+    <!-- Home -->
+    <string name="home_state_locked">Locked</string>
+    <string name="home_state_open">Open</string>
+    <string name="home_locked_body">The apps you locked are closed</string>
+    <string name="home_open_body">Choose how long, then tap \"Lock now\".</string>
+    <string name="home_lock_now">Lock now</string>
+    <string name="home_signoff">Less screen. More life.</string>
+    <string name="home_duration_30m">30 min</string>
+    <string name="home_duration_hour">1 hour</string>
+    <string name="home_duration_key">Until tag/code</string>
+    <string name="home_pick_blocked">Choose what to block</string>
+    <string name="home_allowed_count">Allowed: %1$d</string>
+    <string name="home_blocked_count">%1$d to block</string>
+    <string name="home_key_only_title">Lock with no end time</string>
+    <string name="home_key_only_body">This opens only with an NFC tag, a QR code, or the emergency unlock. There is no \"Open now\" button. Continue?</string>
+    <string name="home_key_only_confirm">Yes, lock it</string>
+    <string name="home_cancel">Cancel</string>
+    <string name="home_perm_notifications">Notifications</string>
+    <string name="home_perm_background">Background</string>
+    <string name="home_perm_missing">⚠ %1$d permissions missing: %2$s</string>
+    <string name="home_perm_fix">Fix</string>
+
+    <!-- Home presets -->
+    <string name="home_presets_title">Ready-made locks</string>
+    <string name="home_presets_hint">Tap to add. Long press to change the hours before saving.</string>
+    <string name="home_preset_work">Work</string>
+    <string name="home_preset_work_time">Sun-Thu 9:00-17:00</string>
+    <string name="home_preset_work_added">Work hours added.</string>
+    <string name="home_preset_sleep">Sleep</string>
+    <string name="home_preset_sleep_time">Every day 22:00-7:00</string>
+    <string name="home_preset_sleep_added">Sleep hours added.</string>
+    <string name="home_preset_shabbat">Shabbat</string>
+    <string name="home_preset_shabbat_time">Sundown to nightfall</string>
+    <string name="home_preset_shabbat_added">Shabbat mode is on.</string>
+    <string name="home_preset_family">Evening</string>
+    <string name="home_preset_family_time">16:00-20:00</string>
+    <string name="home_preset_family_added">Evening hours added.</string>
+
+    <!-- Home nav rows -->
+    <string name="home_row_apps">What gets blocked</string>
+    <string name="home_row_apps_empty">You have not picked any apps yet</string>
+    <string name="home_row_apps_allowlist">Everything blocked except %1$d</string>
+    <string name="home_row_apps_count">%1$d apps on the list</string>
+    <string name="home_row_schedule">Set hours</string>
+    <string name="home_row_schedule_shabbat_and">Shabbat + %1$d time ranges</string>
+    <string name="home_row_schedule_shabbat">Shabbat mode on</string>
+    <string name="home_row_schedule_ranges">%1$d time ranges active</string>
+    <string name="home_row_schedule_empty">For example, every evening from 21:00</string>
+    <string name="home_row_keys">How you open it</string>
+    <string name="home_row_keys_tags">%1$d tags</string>
+    <string name="home_row_keys_qr">QR code</string>
+    <string name="home_row_keys_empty">NFC tag, QR code or Bluetooth</string>
+    <string name="home_row_settings">Settings</string>
+    <string name="home_row_settings_sub">Settings protection, notifications, sound and vibration</string>
+
+    <!-- Badges -->
+    <string name="home_badges_title">Milestones</string>
+    <string name="badge_streak_3">3 days in a row</string>
+    <string name="badge_streak_7">A week in a row</string>
+    <string name="badge_streak_30">A month in a row</string>
+    <string name="badge_first_lock">First lock</string>
+    <string name="badge_first_key">First key unlock</string>
+    <string name="badge_first_bt">First lock from the car</string>
+
+    <!-- Weekly stats -->
+    <string name="stats_streak_days">Days in a row</string>
+    <string name="stats_days_locked">Days with a lock</string>
+    <string name="stats_today">Today</string>
+    <string name="stats_week">This week</string>
+    <string name="stats_total">All time</string>
+    <string name="stats_minutes">%1$d min</string>
+    <string name="stats_attempts">You tried to open a blocked app %1$d times today</string>
+    <string name="stats_attempts_better">Fewer than yesterday (%1$d). Nice.</string>
+    <string name="stats_attempts_same">Same as yesterday, that counts too.</string>
+    <string name="stats_share">Share my week</string>
+    <string name="stats_share_chooser">Share</string>
+    <string name="stats_share_header">📊 Atzor - my week</string>
+    <string name="stats_share_streak">Days in a row: %1$d</string>
+    <string name="stats_share_days">Days with a lock: %1$d out of 7</string>
+    <string name="stats_share_week">Time locked this week: %1$d min</string>
+    <string name="stats_share_today">Today: %1$s</string>
+
+    <!-- Unlock panel -->
+    <string name="unlock_ready">You can open it now</string>
+    <string name="unlock_button">Open</string>
+    <string name="unlock_hint_has_key">To open: hold the tag to your phone, or scan your QR code.</string>
+    <string name="unlock_hint_no_key">Opening needs an NFC tag or a QR code. Add one under \"How you open it\".</string>
+    <string name="unlock_scan_qr">Scan QR</string>
+    <string name="unlock_keys_existing">Tag and code</string>
+    <string name="unlock_keys_add">Add a tag/code</string>
+    <string name="unlock_nfc_hint">NFC tag: open Atzor and hold the tag to the back of your phone.</string>
+
+    <string name="emergency_hold_prompt">Emergency? Press and hold</string>
+
+    <string name="emergency_holding">Keep holding…</string>
+
+    <!-- Duration formatting -->
+    <string name="dur_hours_minutes">%1$dh %2$dm</string>
+    <string name="dur_minutes">%1$d min</string>
+
+    <!-- Lock screen (hard block) -->
+    <string name="lock_title">Locked</string>
+    <string name="lock_body_app">%1$s is closed right now.\nNo need to argue with yourself.</string>
+    <string name="lock_body_generic">What you locked is closed right now.\nNo need to argue with yourself.</string>
+    <string name="lock_body_protection">This screen is locked so you cannot switch Atzor off mid-lock.\nThe rest of Settings works as usual.</string>
+    <string name="lock_hint_tap">To open: launch Atzor and tap \"Open\".</string>
+    <string name="lock_hint_key">To open: an NFC tag or a QR scan.</string>
+    <string name="lock_hint_none">To open: a tag or code, or the emergency unlock below.</string>
+    <string name="lock_home_button">Back to home screen</string>
+
+    <!-- Vault time labels -->
+    <string name="vault_until_key">Opens only with a tag or code</string>
+    <string name="vault_time_left">%1$s left · ends at %2$s</string>
+
+    <!-- Gentle pause -->
+    <string name="gentle_kicker">Just before you go in</string>
+    <string name="gentle_title">A short stop</string>
+    <string name="gentle_body">You tried to open %1$s.\nTen seconds, then decide for real.</string>
+    <string name="gentle_home">Not now, back home</string>
+    <string name="gentle_wait">Go in anyway (%1$d seconds)</string>
+    <string name="gentle_enter">Go in anyway for 5 minutes</string>
+
+    <!-- Apps screen -->
+    <string name="apps_title">What gets blocked</string>
+    <string name="apps_done">Done</string>
+    <string name="apps_mode_blocklist">Only what I picked</string>
+    <string name="apps_mode_allowlist">Everything except what I picked</string>
+    <string name="apps_mode_allowlist_hint">While locked, everything is blocked except the apps you picked. Phone and home screen always stay open.</string>
+    <string name="apps_mode_blocklist_hint">Pick apps, only those get blocked while locked.</string>
+    <string name="apps_gentle_hint">On a blocked app: \"Soft\" = a warning, \"Hard\" = a full block.</string>
+    <string name="apps_quick_pick">Quick pick</string>
+    <string name="apps_quick_added">Added %1$d apps (%2$s).</string>
+    <string name="apps_safety_show">What never gets blocked?</string>
+    <string name="apps_safety_hide">Hide</string>
+    <string name="apps_safety_hard_title">Always protected</string>
+    <string name="apps_safety_hard_body">Phone, emergency and system. These cannot be blocked, ever.</string>
+    <string name="apps_safety_default_title">Open by default</string>
+    <string name="apps_safety_default_body">Navigation and messaging stay open even while locked. Want a stricter lock? You can block each one separately.</string>
+    <string name="apps_safety_open">Open</string>
+    <string name="apps_safety_blocked">Blocked</string>
+    <string name="apps_search">Search for an app…</string>
+    <string name="apps_loading">Loading your apps…</string>
+    <string name="apps_none_match">No app by that name.</string>
+    <string name="apps_empty_title">You have not picked anything to lock yet</string>
+    <string name="apps_empty_body">Pick apps from the list, or use quick pick above (social, video…).</string>
+    <string name="apps_gentle_soft">Soft</string>
+    <string name="apps_gentle_hard">Hard</string>
+    <string name="apps_gentle_default">Default</string>
+    <string name="apps_locked_no_change">You cannot change this while locked.</string>
+    <string name="apps_locked_no_list_change">You cannot change the list while locked.</string>
+
+    <string name="apps_quick_removed">Removed %1$d apps (%2$s).</string>
+    <string name="apps_clear_all">Clear all</string>
+    <string name="apps_cleared">Selection cleared.</string>
+    <string name="apps_selected_count">%1$d selected</string>
+
+    <!-- App categories -->
+    <string name="cat_social">Social</string>
+    <string name="cat_video">Video</string>
+    <string name="cat_games">Games</string>
+    <string name="cat_news">News / browsing</string>
+
+    <!-- Schedule screen -->
+    <string name="sched_title">Set hours</string>
+    <string name="sched_back">Back</string>
+    <string name="sched_intro">When to lock on its own, without tapping anything. Mid-lock it opens only with a tag/code or the emergency unlock.</string>
+    <string name="sched_shabbat_title">🕯 Shabbat</string>
+    <string name="sched_shabbat_body">A weekly day of rest is not a new idea. Locks from Shabbat candle lighting until nightfall, based on Jerusalem sunset. No network, no location.</string>
+    <string name="sched_shabbat_next">This Shabbat: starts %1$s · ends %2$s</string>
+    <string name="sched_shabbat_locked">You cannot turn Shabbat mode off while locked.</string>
+    <string name="sched_oneoff_title">🕎 One-off date</string>
+    <string name="sched_oneoff_body">A holiday eve, a birthday and so on. Locks on that day only.</string>
+    <string name="sched_crosses_midnight">(past midnight)</string>
+    <string name="sched_new_date">New date</string>
+    <string name="sched_from">From %1$s</string>
+    <string name="sched_to">To %1$s</string>
+    <string name="sched_ends_next_day">Ends the next day (past midnight)</string>
+    <string name="sched_add_date">Add a date</string>
+    <string name="sched_empty">No set hours yet. Add some below.</string>
+    <string name="sched_new_hours">New hours</string>
+    <string name="sched_add">Add</string>
+    <string name="sched_name_hint">Name (holiday eve, birthday…)</string>
+    <string name="sched_saved">Hours saved. You can see them under \"Set hours\".</string>
+    <string name="sched_locked_no_change">You cannot change hours while locked.</string>
+    <string name="sched_shabbat_via_toggle">Shabbat mode is turned on from the switch under \"Set hours\".</string>
+
+    <!-- Preset edit dialog -->
+    <string name="preset_edit_title">Edit %1$s</string>
+    <string name="preset_days">Days</string>
+    <string name="preset_hours">Hours (each tap moves 30 min)</string>
+    <string name="preset_same_time_error">Start and end cannot be the same</string>
+    <string name="preset_save">Save</string>
+    <string name="preset_cancel">Cancel</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_back">Back</string>
+    <string name="settings_intro">How Atzor behaves, and what happens while a lock is running.</string>
+    <string name="settings_during_lock">While locked</string>
+    <string name="settings_strict_title">Also protect device settings</string>
+    <string name="settings_strict_sub">Blocks the accessibility screen and the app info screen while locked, so switching Atzor off or removing it is hard. The rest of Settings, including Bluetooth and Wi-Fi, stays open.</string>
+    <string name="settings_gentle_title">Only warn, do not block fully</string>
+    <string name="settings_gentle_sub">Opening a blocked app shows a short screen with the option to go in anyway.</string>
+    <string name="settings_notif_title">Hide notifications from blocked apps</string>
+    <string name="settings_notif_on">On. Notifications come back once the lock ends.</string>
+    <string name="settings_notif_off">While locked, blocked apps will not pop up notifications.</string>
+    <string name="settings_batt_title">Do not let the phone shut Atzor down</string>
+    <string name="settings_batt_on">On. Atzor stays alive in the background.</string>
+    <string name="settings_batt_off">Recommended: otherwise battery saving can stop the blocking.</string>
+    <string name="settings_feedback">Sound and vibration</string>
+    <string name="settings_haptics_title">Vibrate on lock and open</string>
+    <string name="settings_haptics_sub">Stronger on locking, gentler on opening.</string>
+    <string name="settings_sound_title">Sound on lock and open</string>
+    <string name="settings_sound_sub">A short, different tone for each.</string>
+    <string name="settings_motion_title">Less animation</string>
+    <string name="settings_motion_sub">The lock screen moves less. Also useful if animations are off system-wide.</string>
+    <string name="settings_enabled">On</string>
+    <string name="settings_enable">Turn on</string>
+    <string name="settings_locked_strict">You cannot turn this off while locked.</string>
+    <string name="settings_locked_change">You cannot change this while locked.</string>
+    <string name="settings_locked_generic">You cannot change settings while locked.</string>
+
+    <!-- Guarded Settings screen notice -->
+    <string name="notice_settings_guarded">This screen is locked while a lock is running, so Atzor cannot be switched off. The rest of Settings is open, including Bluetooth and Wi-Fi.\nReally need out? Hold the emergency button on the lock screen.</string>
+
+    <!-- Strict mode confirmation -->
+    <string name="strict_confirm_title">Before you turn this on</string>
+    <string name="strict_confirm_body">While a lock is running you will not be able to switch Atzor off or uninstall it. The only early way out is the emergency unlock, which you open by holding a button for five seconds.\n\nThe rest of Settings stays open, including Bluetooth and Wi-Fi. Note that on some devices the block is not perfect, so this makes backing out hard rather than impossible.</string>
+    <string name="strict_confirm_enable">Turn on</string>
+    <string name="strict_confirm_cancel">Cancel</string>
+
+    <!-- Tips carousel -->
+    <string name="tips_title">Tips</string>
+    <string name="tips_next">Next</string>
+    <string name="tips_got_it">Got it</string>
+    <string name="tips_close">Close</string>
+    <string name="tip_open_title">How you open it</string>
+    <string name="tip_open_body">Locked for a set time? Tap \"Open\" on the home screen. Locked until a tag/code? Hold the tag or scan the QR. Emergency: hold the unlock button for five seconds.</string>
+    <string name="tip_shabbat_title">A digital day of rest, midweek too</string>
+    <string name="tip_shabbat_body">A weekly day of rest is not a new idea. Set one evening a week where the phone is simply locked, and let it happen on its own instead of deciding all over again each time.</string>
+    <string name="tip_bt_title">Your car\'s Bluetooth</string>
+    <string name="tip_bt_body">Atzor can lock automatically when the car connects. Only devices you marked under \"How you open it\", never on any Bluetooth.</string>
+    <string name="tip_emergency_title">Emergency release</string>
+    <string name="tip_emergency_body">If you truly need out: press and hold the emergency button for five seconds. Long enough that you cannot do it by accident, short enough that a real emergency is never a problem.</string>
+
+    <!-- Widget -->
+    <string name="widget_locked">Locked</string>
+    <string name="widget_lock_action">Lock</string>
+    <string name="widget_title_locked">Atzor locked</string>
+    <string name="widget_title_open">Atzor</string>
+    <string name="widget_until_key">Until tag/code</string>
+    <string name="widget_today_streak">%1$d min today · %2$d streak</string>
+    <string name="widget_streak_today">%1$d streak · %2$d min today</string>
+    <string name="widget_today_only">%1$d min today</string>
+    <string name="widget_tap_to_lock">Tap to lock</string>
+
+    <!-- Ongoing notification -->
+    <string name="notif_channel_name">Lock running</string>
+    <string name="notif_channel_desc">Shown while a lock is running and apps are blocked</string>
+    <string name="notif_title">Atzor is locking</string>
+    <string name="notif_until_key">Opens only with a tag or code</string>
+    <string name="notif_countdown">Time left until it opens</string>
+
+    <!-- Quick settings tile -->
+    <string name="tile_label">Atzor</string>
+    <string name="tile_locked">Locked</string>
+    <string name="tile_open">Open</string>
+
+    <!-- Keys / NFC / QR messages -->
+    <string name="key_tag_saved_written">Tag saved. Hold it to your phone to lock or open.</string>
+    <string name="key_tag_saved">Tag saved. From now on it opens and locks.</string>
+    <string name="key_no_tag_yet">No tag yet. Add one under \"How you open it\".</string>
+    <string name="key_locked_now">Locked.</string>
+    <string name="key_opened_now">Opened.</string>
+    <string name="key_wrong_tag">That is not the tag you saved.</string>
+    <string name="key_unknown_code">That code is not recognised.</string>
+    <string name="key_tag_default_label">Tag %1$d</string>
+    <string name="key_tag_fallback_label">Tag</string>
+
+    <!-- Keys screen -->
+    <string name="keys_title">How you open it</string>
+    <string name="keys_back">Back</string>
+    <string name="keys_intro">A tag, a QR code or Bluetooth that opens (and locks) Atzor. Keep it far from your phone.</string>
+    <string name="keys_empty_title">No tag or code yet</string>
+    <string name="keys_empty_body">Pair an NFC tag or create a QR code. Keep it far from your phone, so opening is never too easy.</string>
+    <string name="keys_nfc_title">NFC tag</string>
+    <string name="keys_nfc_register">Hold the tag to the back of your phone now.</string>
+    <string name="keys_nfc_one">One tag saved. Holding it to the phone locks or opens.</string>
+    <string name="keys_nfc_many">%1$d tags saved.</string>
+    <string name="keys_nfc_none">Works with any NFC tag or sticker, even an old card.</string>
+    <string name="keys_nfc_cancel">Cancel</string>
+    <string name="keys_nfc_add_first">Pair a tag</string>
+    <string name="keys_nfc_add_more">Add a tag</string>
+    <string name="keys_nfc_clear">Delete all</string>
+    <string name="keys_save">Save</string>
+    <string name="keys_cancel">Cancel</string>
+    <string name="keys_last_used">Last used: %1$s</string>
+    <string name="keys_never_used">Not used yet</string>
+    <string name="keys_rename">Rename</string>
+    <string name="keys_qr_title">QR code</string>
+    <string name="keys_qr_have">You have a code. Print it, keep it somewhere fixed, and scan it when you want to lock or open.</string>
+    <string name="keys_qr_last_used">\nLast used: %1$s</string>
+    <string name="keys_qr_none">Create a code, print it, and scan it when you need to.</string>
+    <string name="keys_qr_create">Create a code</string>
+    <string name="keys_qr_scan">Scan</string>
+    <string name="keys_qr_hide">Hide</string>
+    <string name="keys_qr_show">Show the code</string>
+    <string name="keys_qr_content_desc">Atzor QR code</string>
+    <string name="keys_qr_print_hint">Screenshot it or print it. Do not leave it next to your phone.</string>
+    <string name="keys_qr_delete">Delete the code</string>
+    <string name="keys_bt_title">Bluetooth (your car, for example)</string>
+    <string name="keys_bt_body">Only devices you mark here. When they connect, Atzor locks. Never on any Bluetooth.</string>
+    <string name="keys_bt_lock_on_connect">Lock when the device connects</string>
+    <string name="keys_bt_unlock_on_disconnect">Open when the device disconnects</string>
+    <string name="keys_bt_unlock_hint">For example: you get out of the car and the lock ends.</string>
+    <string name="keys_bt_duration">How long to lock on connect:</string>
+    <string name="keys_bt_hour">1 hour</string>
+    <string name="keys_bt_two_hours">2 hours</string>
+    <string name="keys_bt_until_key">Until tag/code</string>
+    <string name="keys_bt_permission">Bluetooth permission is needed to see your devices. Tap here.</string>
+    <string name="keys_bt_none">No connected devices. Pair a car or headphones in your phone\'s Bluetooth settings first, then mark them here.</string>
+    <string name="keys_bt_marked">✓ Marked</string>
+    <string name="keys_bt_mark">Mark</string>
+    <string name="keys_bt_active">Active</string>
+
+    <!-- Buy a ready-made key -->
+    <string name="keys_buy_title">No tag yet?</string>
+    <string name="keys_buy_body">Order a ready-made Atzor tag, printed and set up. ₪50 including shipping.</string>
+    <string name="keys_buy_button">Order a tag (₪50)</string>
+
+    <string name="keys_buy_message">Hi! I would like to order a ready-made Atzor tag (₪50).</string>
+    <string name="keys_buy_subject">Ordering an Atzor tag</string>
+    <string name="keys_buy_no_app">No WhatsApp or mail app found. Write to %1$s instead.</string>
+
+    <!-- Shortcuts / toasts -->
+    <string name="msg_already_locked">Already locked.</string>
+    <string name="msg_pick_apps_first">First choose which apps to block.</string>
+    <string name="msg_locked_for_hour">Locked for an hour.</string>
+    <string name="msg_need_key_first">First add an NFC tag or a QR code.</string>
+    <string name="msg_locked_until_key">Locked, opens only with a tag or code.</string>
+    <string name="msg_need_key_for_untimed">Locking with no end time needs an NFC tag or a QR code first.</string>
+    <string name="msg_locked_open_first">You cannot change this while locked. Open it first.</string>
+
+    <!-- Bluetooth -->
+    <string name="bt_no_apps">A Bluetooth device connected, but there are no apps to block.</string>
+    <string name="bt_locked_because">Locked because of %1$s</string>
+    <string name="bt_opened_disconnect">Opened, %1$s disconnected</string>
+
+    <!-- What is new -->
+    <string name="whatsnew_title">What is new in %1$s</string>
+    <string name="whatsnew_line_1">Navigation and messaging stay open while locked</string>
+    <string name="whatsnew_line_2">Clearer wording on every screen</string>
+    <string name="whatsnew_line_3">Different sound and vibration for locking and opening</string>
+    <string name="whatsnew_got_it">Got it</string>
+
+    <!-- Crash screen -->
+    <string name="crash_title">Atzor crashed. Screenshot this and send it to me 👇</string>
+    <string name="crash_retry">Clear and try again</string>
+
+    <!-- Day-of-week initials (Sunday first) -->
+    <string-array name="day_letters">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </string-array>
+
+    <!-- Safety package labels -->
+    <string name="safety_dialer_aosp">Phone (AOSP)</string>
+    <string name="safety_dialer_google">Phone (Google)</string>
+    <string name="safety_dialer_samsung">Phone (Samsung)</string>
+    <string name="safety_telephonyui_samsung">Samsung call UI</string>
+    <string name="safety_emergency">Emergency</string>
+    <string name="safety_systemui">System UI</string>
+    <string name="safety_settings">Settings</string>
+    <string name="safety_maps_google">Google Maps</string>
+    <string name="safety_waze">Waze</string>
+    <string name="safety_moovit">Moovit</string>
+    <string name="safety_mms">Messages</string>
+    <string name="safety_messages_google">Google Messages</string>
+    <string name="safety_messages_samsung">Samsung Messages</string>
+    <string name="safety_kind_calls">Calls</string>
+    <string name="safety_kind_emergency">Emergency</string>
+    <string name="safety_kind_system">System</string>
+    <string name="safety_kind_navigation">Navigation</string>
+    <string name="safety_kind_messaging">Messaging</string>
+
+</resources>

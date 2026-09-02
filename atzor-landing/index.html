@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>עצור | חוסם המסך שבאמת עוצר אתכם</title>
+  <meta name="description" content="עצור הוא חוסם אפליקציות שבאמת עובד: מפתח פיזי (NFC/QR), מצב שבת, לוח זמנים, ועצירה רכה. הכל בעברית, הכל נשאר במכשיר. הורידו מ-Google Play." />
+  <meta name="keywords" content="חסימת אפליקציות, פחות זמן מסך, חוסם מסך, עצור, digital wellbeing, מצב שבת" />
+
+  <meta property="og:title" content="עצור, חוסם המסך שבאמת עוצר אתכם" />
+  <meta property="og:description" content="חוסם אפליקציות עם מפתח פיזי, מצב שבת ולוח זמנים. בעברית, והכל נשאר במכשיר." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+
+  <meta name="theme-color" content="#f5ead8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iI0M2NzEzOSIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTMiIHI9IjYiIGZpbGw9IiNGNkEwNkIiLz48cGF0aCBkPSJNNCAyNiBRMTAgMjAgMTYgMjMgUTIyIDI2IDI4IDIyIEwyOCAzMiBMNCAzMiBaIiBmaWxsPSIjNTY2MzQwIi8+PC9zdmc+" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="עצור, דף הבית">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">עצור</span>
+      </a>
+      <nav class="header-nav">
+        <a href="#features">מה יש בפנים</a>
+        <a href="#how">איך זה עובד</a>
+        <a href="#privacy">פרטיות</a>
+        <a href="#faq">שאלות</a>
+      </nav>
+      <a href="#download" class="btn btn-header" data-cta="header-download">הורדה</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">חוסם המסך הראשון שבנוי לישראלים</p>
+          <h1 class="hero-headline">תעצרו את הגלילה.<br /><em>באמת.</em></h1>
+          <p class="hero-sub">
+            רוב חוסמי המסך נפתחים בלחיצה אחת ברגע של חולשה. <strong>עצור</strong> נותן לכם
+            מפתח פיזי אמיתי, תג NFC או קוד מודפס, שמחזיק אתכם למרחק בדיוק כשקשה.
+            הכל בעברית, והכל נשאר אצלכם במכשיר.
+          </p>
+          <div class="hero-ctas">
+            <a href="https://play.google.com/apps/testing/com.atzor.app" class="btn btn-primary btn-lg" data-cta="hero-download" data-play-link data-event="cta_play_secondary">
+              <span class="gplay-icon" aria-hidden="true"></span>
+              הורדה מ-Google Play
+            </a>
+            <a href="#how" class="link-secondary" data-cta="hero-how">איך זה עובד?</a>
+          </div>
+          <!-- Rendered visible on purpose: with JS off this context should still show.
+               app.js removes it when GROUP_URL is empty. -->
+          <p class="beta-note" data-beta-note>
+            עצור בבטא. ההצטרפות עוברת דרך <span data-group-link>קבוצת Google</span> של הבודקים,
+            שלב אחד לפני ההורדה.
+          </p>
+          <p class="hero-note">חינם בבטא · אנדרואיד · בלי פרסומות · בלי לאסוף מה שאתם חוסמים</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Phone: vault home screen -->
+          <div class="phone phone-hero">
+            <div class="phone-screen scene-vault">
+              <div class="s-top">
+                <span class="s-brand"><span class="s-dot"></span>עצור</span>
+                <span class="s-chip-light">3 חסומות</span>
+              </div>
+              <div class="vault-stage">
+                <div class="vault-glow vault-glow-open"></div>
+                <div class="vault-graphic vault-open"></div>
+              </div>
+              <div class="s-bottom">
+                <div class="s-title">פתוח</div>
+                <div class="s-caption">בחרו כמה זמן, ואז לחצו לנעול</div>
+                <div class="s-chips">
+                  <span class="s-pill s-pill-on">30 דק׳</span>
+                  <span class="s-pill">שעה</span>
+                  <span class="s-pill">עד המפתח</span>
+                </div>
+                <div class="s-lock-btn">לנעול עכשיו</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="problem">
+      <div class="container">
+        <p class="problem-text">
+          אתם יודעים בדיוק כמה שעות נבלעות במסך. הבעיה מעולם לא הייתה לדעת,
+          אלא לעצור את זה באמת, בלי עוד הבטחה לעצמכם שנשברת אחרי חמש דקות.
+        </p>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how" id="how">
+      <div class="container">
+        <p class="section-eyebrow">פשוט, בכוונה</p>
+        <h2 class="section-title">איך זה עובד</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">01</span>
+            <h3>בוחרים מה חוסמים</h3>
+            <p>אינסטגרם, טיקטוק, יוטיוב, או הכל חוץ מהמצלמה והטלפון. אתם קובעים, וגם מחליטים אם החסימה קשיחה או רכה.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <h3>אוטמים את הכספת</h3>
+            <p>לחיצה אחת, תג NFC, קוד QR, לוח זמנים קבוע, או אפילו כשמתחברים לרכב. האפליקציות נחסמות באמת.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <h3>המפתח מרחיק אתכם</h3>
+            <p>שמים את התג במגירה במטבח. עכשיו הדרך חזרה לאינסטגרם עוברת דרך הסלון, וזה כל ההבדל.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="container">
+        <p class="section-eyebrow">מה יש בפנים</p>
+        <h2 class="section-title">כל מה שצריך כדי לעצור</h2>
+        <div class="feature-grid">
+          <article class="feature-card feature-wide">
+            <div class="feature-icon icon-key"></div>
+            <h3>מפתח פיזי אמיתי</h3>
+            <p>תג NFC או קוד QR מודפס שנועל ופותח את עצור. אפשר לרשום כמה תגים: בית, עבודה, רכב. זה מה שהופך את החסימה למחויבות אמיתית, לא כפתור שקל ללחוץ עליו.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon icon-candle"></div>
+            <h3>מצב שבת</h3>
+            <p>נעילה אוטומטית מהדלקת נרות עד צאת השבת, לפי שקיעה בירושלים. בלי רשת, בלי מיקום.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon icon-calendar"></div>
+            <h3>לוח זמנים ומועדים</h3>
+            <p>כל ערב ב-21:00, או תאריך מיוחד כמו ערב פסח. קובעים כשקל, והנעילה מגיעה לבד כשקשה.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon icon-breath"></div>
+            <h3>עצירה רכה</h3>
+            <p>לא חומה, אלא נשימה. עשר שניות של רגע לפני שנכנסים, שמספיקות כדי להתחרט. לכל אפליקציה בנפרד.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon icon-shield"></div>
+            <h3>הגנה מהסרה</h3>
+            <p>בזמן נעילה נחסמים מסך הנגישות ומסך פרטי האפליקציה, כדי שיהיה קשה לכבות את עצור ברגע חולשה. שאר ההגדרות נשארות פתוחות, כולל Bluetooth ו-Wi-Fi. וכשבאמת צריך לצאת, יש שחרור חירום בלחיצה ארוכה של חמש שניות.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon icon-streak"></div>
+            <h3>סטטיסטיקות ורצף</h3>
+            <p>כמה זמן הייתם בשקט, כמה פעמים נעצרתם, ורצף הימים שלכם. מספר אחד שגורם לחזור.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="container">
+        <p class="section-eyebrow">מבט מבפנים</p>
+        <h2 class="section-title">שקט שנעים להסתכל עליו</h2>
+        <div class="showcase-row">
+          <!-- Lock: sealed vault -->
+          <div class="showcase-item">
+            <div class="phone">
+              <div class="phone-screen scene-night">
+                <span class="star" style="top:14%;right:20%"></span>
+                <span class="star" style="top:22%;left:26%"></span>
+                <span class="star" style="top:9%;left:44%"></span>
+                <span class="star" style="top:30%;right:34%"></span>
+                <div class="vault-stage vault-stage-lock">
+                  <div class="vault-glow vault-glow-sealed"></div>
+                  <div class="vault-graphic vault-sealed"></div>
+                </div>
+                <svg class="hills hills-night" viewBox="0 0 300 180" preserveAspectRatio="none">
+                  <path d="M0,84 C70,54 140,78 200,58 C250,42 280,58 300,48 L300,180 L0,180 Z" fill="#1c2314"/>
+                  <path d="M0,140 C90,110 190,138 260,120 C285,113 295,120 300,116 L300,180 L0,180 Z" fill="#141a0e"/>
+                </svg>
+                <div class="s-night-center">
+                  <div class="s-night-title">נעול</div>
+                  <div class="s-night-sub">האפליקציות שחסמתם לא נפתחות.<br />אפשר לחזור למסך הבית.</div>
+                  <div class="s-night-pill">נשארו 1:23:45</div>
+                </div>
+                <div class="s-night-btn">חזרה למסך הבית</div>
+              </div>
+            </div>
+            <p class="showcase-caption">מסך הנעילה, הכספת אטומה</p>
+          </div>
+
+          <!-- Gentle -->
+          <div class="showcase-item">
+            <div class="phone">
+              <div class="phone-screen scene-dawn">
+                <div class="dawn-halo dawn-halo-1"></div>
+                <div class="dawn-halo dawn-halo-2"></div>
+                <div class="dawn-sun"></div>
+                <div class="s-dawn-center">
+                  <div class="s-dawn-kicker">נשימה</div>
+                  <div class="s-dawn-title">רגע לפני שנכנסים</div>
+                  <div class="s-dawn-sub">ניסיתם לפתוח את אינסטגרם.<br />קחו 10 שניות, ואז תחליטו.</div>
+                </div>
+                <div class="s-dawn-btn">לא עכשיו, חזרה הביתה</div>
+              </div>
+            </div>
+            <p class="showcase-caption">עצירה רכה, נשימה במקום חומה</p>
+          </div>
+
+          <!-- Keys -->
+          <div class="showcase-item">
+            <div class="phone">
+              <div class="phone-screen scene-paper">
+                <div class="s-paper-head">מפתחות</div>
+                <div class="s-paper-lead">חפץ אמיתי שנועל ופותח את עצור.</div>
+                <div class="s-card s-card-active">
+                  <div class="s-card-row">
+                    <span class="s-card-icon icon-key-sm"></span>
+                    <div>
+                      <div class="s-card-title">תג NFC <span class="s-tag">פעיל</span></div>
+                      <div class="s-card-body">הצמדה לגב הטלפון נועלת או פותחת.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-card">
+                  <div class="s-card-row">
+                    <span class="s-card-icon icon-qr-sm"></span>
+                    <div>
+                      <div class="s-card-title">קוד QR מודפס</div>
+                      <div class="s-card-body">מדפיסים, מרחיקים, סורקים כשצריך.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-card">
+                  <div class="s-card-row">
+                    <span class="s-card-icon icon-bt-sm"></span>
+                    <div>
+                      <div class="s-card-title">נעילה ברכב</div>
+                      <div class="s-card-body">מתחברים לבלוטות׳, והנעילה מתחילה לבד.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="showcase-caption">המפתחות: NFC, QR, ואפילו הרכב</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety
+         Only two guarantees are stated here, because only these two are true in the app
+         today: the dialer and emergency calls are never blocked, and the emergency release
+         exists.
+
+         Once the app actually guarantees that navigation apps (Waze / Google Maps / Moovit)
+         and emergency alert apps (פיקוד העורף / Red Alert) stay available during a lock,
+         add those claims here. Until that ships, do not claim them, and do not gesture at
+         them with vaguer wording either. -->
+    <section class="safety" id="safety">
+      <div class="container">
+        <p class="section-eyebrow">בטיחות</p>
+        <h2 class="section-title">מה קורה כשבאמת צריך לצאת</h2>
+        <p class="safety-lead">
+          זו השאלה הראשונה ששאלו אותנו כאן בארץ: אזעקה באמצע נעילה, צריך לזוז,
+          ואף אחד לא הולך לחפש תג NFC במגירה. אז הנה מה שעצור מבטיח היום, בלי כוכביות.
+        </p>
+        <div class="safety-grid">
+          <article class="safety-card">
+            <div class="feature-icon icon-phone"></div>
+            <h3>הטלפון נשאר טלפון</h3>
+            <p>
+              שיחות חירום והחייגן לא נחסמים. אף פעם, בשום מצב, בשום הגדרה שתבחרו.
+              גם בנעילה הכי קשיחה אפשר להתקשר.
+            </p>
+          </article>
+          <article class="safety-card">
+            <div class="feature-icon icon-exit"></div>
+            <h3>שחרור חירום, חמש שניות</h3>
+            <p>
+              לחיצה ארוכה של חמש שניות על מסך הנעילה פותחת את הנעילה מיד, בלי תג
+              ובלי להמתין. אם צריך להגיע לאפליקציה כלשהי שחסמתם, זו הדרך, והיא לוקחת
+              פחות זמן מלקרוא את המשפט הזה.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="privacy-band" id="privacy">
+      <div class="container privacy-inner">
+        <div class="privacy-badge" aria-hidden="true"></div>
+        <h2 class="privacy-title">מה שאתם עושים בטלפון, נשאר בטלפון</h2>
+        <p class="privacy-copy">
+          אילו אפליקציות אתם חוסמים, כמה זמן, כמה פעמים ניסיתם להיכנס. כל זה נשמר
+          <strong>אך ורק על המכשיר שלכם</strong> ולעולם לא עוזב אותו. שירות הנגישות
+          רואה רק איזו אפליקציה עלתה למסך כדי לחסום אותה, בלי תוכן ובלי הקלדות.
+          אנחנו אוספים רק סטטיסטיקות שימוש אנונימיות (כמה אנשים פתחו את האפליקציה),
+          בלי מזהה פרסומי ובלי זהות אישית.
+        </p>
+        <a href="privacy.html" class="privacy-link" data-event="privacy_click">מדיניות הפרטיות המלאה ←</a>
+      </div>
+    </section>
+
+    <!-- FAQ. Native details/summary: keyboard-operable and fully working with JS disabled. -->
+    <section class="faq" id="faq">
+      <div class="container faq-inner">
+        <p class="section-eyebrow">שאלות</p>
+        <h2 class="section-title">מה שבדרך כלל שואלים</h2>
+
+        <details class="faq-item">
+          <summary>זה עובד על אייפון?</summary>
+          <div class="faq-body">
+            <p>
+              עדיין לא. עצור זמין כרגע לאנדרואיד 8 ומעלה בלבד. אם אתם על אייפון,
+              השאירו מייל למטה ותהיו הראשונים לדעת כשיש גרסה. זה גם מה שעוזר לנו
+              להחליט מתי לבנות אותה.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>זה באמת חינם?</summary>
+          <div class="faq-body">
+            <p>
+              כן, וללא הגבלה לאורך כל הבטא. בהמשך תהיה גם גרסה בתשלום, אבל מי שנכנס
+              עכשיו שומר את מה שיש לו היום, בחינם. בלי פרסומות בשום שלב.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>מה אם אני צריך לצאת מנעילה דחוף?</summary>
+          <div class="faq-body">
+            <p>
+              יש שחרור חירום: לחיצה ארוכה של חמש שניות על מסך הנעילה פותחת הכל מיד,
+              בלי תג ובלי להמתין. ושיחות חירום והחייגן ממילא לא נחסמים אף פעם,
+              בשום הגדרה.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>במה זה שונה מ-Freedom או מחוסמים אחרים?</summary>
+          <div class="faq-body">
+            <p>
+              רוב החוסמים נפתחים בלחיצה אחת, כי הכפתור שמבטל אותם נמצא תמיד באותו כיס
+              שבו נמצא הטלפון. בעצור המפתח הוא חפץ אמיתי, תג NFC או קוד QR מודפס,
+              שאפשר להשאיר בחדר אחר. חוץ מזה עצור בנוי בעברית ולישראלים: מצב שבת לפי
+              שקיעה, מועדים, וכל הנתונים נשארים במכשיר.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>מתי עצור יוצא מבטא?</summary>
+          <div class="faq-body">
+            <p>
+              עוד בבדיקות, ואנחנו מעדיפים לא להמציא תאריך שלא נעמוד בו. מי שהשאיר
+              מייל מקבל את העדכון ראשון.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="download" id="download">
+      <div class="container download-inner">
+        <h2 class="download-title">מוכנים להפסיק לגלול?</h2>
+        <p class="download-sub">הורידו את עצור, בחרו מה לחסום, והרגישו את השקט הראשון תוך דקה.</p>
+        <a href="https://play.google.com/apps/testing/com.atzor.app" class="btn btn-primary btn-lg" data-cta="download-main" id="play-link" data-play-link data-event="cta_play_primary">
+          <span class="gplay-icon" aria-hidden="true"></span>
+          הורדה מ-Google Play
+        </a>
+        <p class="download-micro">אנדרואיד 8 ומעלה · חינם בבטא · בלי פרסומות</p>
+        <!-- Rendered visible on purpose: with JS off this context should still show.
+             app.js removes it when GROUP_URL is empty. -->
+        <p class="beta-note beta-note-lg" data-beta-note>
+          עצור בבטא. קודם מצטרפים ל<span data-group-link>קבוצת Google</span> של הבודקים,
+          שלב אחד שלוקח דקה, ואז מורידים רגיל מ-Google Play.
+          חינם עכשיו, ומי שנכנס בבטא שומר את מה שיש לו.
+        </p>
+
+        <!-- Capture A: the iPhone wall, right at the moment it is hit. -->
+        <div class="capture capture-ios">
+          <h3 class="capture-title">אין לכם אנדרואיד?</h3>
+          <p class="capture-sub">
+            עצור זמין כרגע לאנדרואיד בלבד. השאירו מייל ונעדכן אתכם ברגע שגרסת האייפון מוכנה.
+          </p>
+          <form class="capture-form" action="/api/subscribe" method="post" novalidate
+                data-capture="ios_waitlist" data-event="waitlist_ios_submit">
+            <input type="hidden" name="source" value="ios_waitlist" />
+            <label class="sr-only" for="ios-email">כתובת מייל</label>
+            <input class="capture-input" id="ios-email" name="email" type="email"
+                   inputmode="email" autocomplete="email" required
+                   placeholder="you@example.com" />
+            <button class="btn btn-primary capture-btn" type="submit">עדכנו אותי</button>
+          </form>
+          <p class="capture-status" data-status role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capture B: scrolled past the button, not installing today. -->
+    <section class="capture-band">
+      <div class="container">
+        <div class="capture capture-general">
+          <h2 class="capture-title">עוד לא הרגע הנכון?</h2>
+          <p class="capture-sub">
+            השאירו מייל ונעדכן כשיש חדש: גרסאות, תכונות, ויציאה מבטא. בלי ספאם, ואפשר
+            להסיר את עצמכם במייל אחד.
+          </p>
+          <form class="capture-form" action="/api/subscribe" method="post" novalidate
+                data-capture="general_waitlist" data-event="waitlist_general_submit">
+            <input type="hidden" name="source" value="general_waitlist" />
+            <label class="sr-only" for="general-email">כתובת מייל</label>
+            <input class="capture-input" id="general-email" name="email" type="email"
+                   inputmode="email" autocomplete="email" required
+                   placeholder="you@example.com" />
+            <button class="btn btn-primary capture-btn" type="submit">שמרו לי עדכון</button>
+          </form>
+          <p class="capture-status" data-status role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">עצור © 2026</p>
+      <a href="mailto:zyaakov6@gmail.com" class="footer-link">zyaakov6@gmail.com</a>
+      <a href="privacy.html" class="footer-link" data-event="privacy_click">פרטיות</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <!-- Vercel Web Analytics (pageviews). Custom events are sent from app.js. -->
+  <script defer src="/_vercel/insights/script.js"></script>
+  <!-- Vercel Speed Insights (Core Web Vitals). -->
+  <script>window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Hebrew copy. Android picks this when the device language is Hebrew; every
+  other language falls back to the English default in values/.
+
+  The qualifier is "iw", not "he": Android's resource resolver still uses the
+  legacy ISO code for Hebrew. It looks wrong and is correct.
+
+  Voice: spoken Hebrew, plural second person (אתם), never translated-sounding.
+  Position: willpower does not work, and עצור does not ask for any. The copy and
+  the mechanism have to back each other up, so nothing here may promise behavior
+  the app does not actually implement.
+  Never use em-dashes. Regular hyphens only.
+-->
+<resources>
+
+    <!-- App / system -->
+    <string name="app_name">עצור</string>
+    <string name="accessibility_service_label">עצור · חסימת אפליקציות</string>
+    <string name="accessibility_service_description">עצור משתמש בשירות הנגישות רק כדי לדעת איזו אפליקציה פתוחה, וכך לחסום את מה שבחרתם בזמן נעילה. אין קריאה של תוכן המסך, הקלדות או הודעות. כלום לא נשלח החוצה.</string>
+    <string name="shortcut_hour_short">נעילה לשעה</string>
+    <string name="shortcut_hour_long">לנעול לשעה אחת</string>
+    <string name="shortcut_key_short">עד תג/קוד</string>
+    <string name="shortcut_key_long">לנעול עד שפותחים עם תג או קוד</string>
+    <string name="widget_description">עצור - נעילה מהירה וספירה לאחור</string>
+
+    <!-- Onboarding -->
+    <string name="onb_title">כוח רצון נגמר.\nכספת לא.</string>
+    <string name="onb_body">רוב האפליקציות מבקשות מכם להתאפק בדיוק ברגע הכי קשה. עצור לא מבקש כלום, הוא פשוט לא נותן לאפליקציה להיפתח. בשביל זה אנדרואיד צריך הרשאת ״שירות נגישות״, פעם אחת.</string>
+    <string name="onb_step_1">לחצו על הכפתור למטה</string>
+    <string name="onb_step_2">מצאו ״עצור · חסימת אפליקציות״</string>
+    <string name="onb_step_3">הדליקו ואשרו</string>
+    <string name="onb_privacy">פרטיות: רואים רק איזו אפליקציה פתוחה. לא תוכן, לא הקלדות, לא הודעות. שום דבר לא יוצא מהטלפון.</string>
+    <string name="onb_open_settings">לפתוח הגדרות נגישות</string>
+    <string name="onb_continue">אפשר להתחיל</string>
+
+    <!-- Quick start -->
+    <string name="qs_title">מה לנעול?</string>
+    <string name="qs_body">בחרו את מה שגונב לכם את היום. לא צריך להבטיח לעצמכם שתתאפקו, בשביל זה יש את עצור.</string>
+    <string name="qs_loading">טוען…</string>
+    <string name="qs_none_found">לא מצאנו אף אחת מהאפליקציות הנפוצות במכשיר. אין בעיה, תבחרו ידנית במסך הבא.</string>
+    <string name="qs_lock_30">לנעול ל-30 דקות</string>
+    <string name="qs_later">אחר כך, אבחר לבד</string>
+
+    <!-- Home -->
+    <string name="home_state_locked">נעול</string>
+    <string name="home_state_open">פתוח</string>
+    <string name="home_locked_body">האפליקציות שנעלתם סגורות</string>
+    <string name="home_open_body">בחרו כמה זמן, ואז לחצו ״לנעול עכשיו״.</string>
+    <string name="home_lock_now">לנעול עכשיו</string>
+    <string name="home_signoff">פחות מסך. יותר חיים.</string>
+    <string name="home_duration_30m">30 דק׳</string>
+    <string name="home_duration_hour">שעה</string>
+    <string name="home_duration_key">עד התג/קוד</string>
+    <string name="home_pick_blocked">בחרו מה לחסום</string>
+    <string name="home_allowed_count">מותרות: %1$d</string>
+    <string name="home_blocked_count">%1$d לחסימה</string>
+    <string name="home_key_only_title">נעילה בלי שעת סיום</string>
+    <string name="home_key_only_body">ייפתח רק עם תג NFC, קוד QR, או שחרור חירום. אין כפתור ״פתיחה עכשיו״. להמשיך?</string>
+    <string name="home_key_only_confirm">כן, לנעול</string>
+    <string name="home_cancel">ביטול</string>
+    <string name="home_perm_notifications">התראות</string>
+    <string name="home_perm_background">רקע</string>
+    <string name="home_perm_missing">⚠ חסרות %1$d הרשאות: %2$s</string>
+    <string name="home_perm_fix">לתיקון</string>
+
+    <!-- Home presets -->
+    <string name="home_presets_title">נעילות מוכנות</string>
+    <string name="home_presets_hint">לחיצה קצרה = הוספה. לחיצה ארוכה = שינוי שעות לפני שמירה.</string>
+    <string name="home_preset_work">עבודה</string>
+    <string name="home_preset_work_time">א׳-ה׳ 9:00-17:00</string>
+    <string name="home_preset_work_added">נוספו שעות עבודה.</string>
+    <string name="home_preset_sleep">שינה</string>
+    <string name="home_preset_sleep_time">כל יום 22:00-7:00</string>
+    <string name="home_preset_sleep_added">נוספו שעות שינה.</string>
+    <string name="home_preset_shabbat">שבת</string>
+    <string name="home_preset_shabbat_time">מכניסה עד צאת</string>
+    <string name="home_preset_shabbat_added">מצב שבת דולק.</string>
+    <string name="home_preset_family">אחה״צ</string>
+    <string name="home_preset_family_time">16:00-20:00</string>
+    <string name="home_preset_family_added">נוספו שעות אחר הצהריים.</string>
+
+    <!-- Home nav rows -->
+    <string name="home_row_apps">מה חוסמים</string>
+    <string name="home_row_apps_empty">עדיין לא בחרתם אפליקציות</string>
+    <string name="home_row_apps_allowlist">הכל חסום חוץ מ-%1$d</string>
+    <string name="home_row_apps_count">%1$d אפליקציות ברשימה</string>
+    <string name="home_row_schedule">שעות קבועות</string>
+    <string name="home_row_schedule_shabbat_and">שבת + %1$d טווחי שעות</string>
+    <string name="home_row_schedule_shabbat">שבת דולקת</string>
+    <string name="home_row_schedule_ranges">%1$d טווחי שעות פעילים</string>
+    <string name="home_row_schedule_empty">למשל כל ערב מ-21:00</string>
+    <string name="home_row_keys">איך פותחים</string>
+    <string name="home_row_keys_tags">%1$d תגים</string>
+    <string name="home_row_keys_qr">קוד QR</string>
+    <string name="home_row_keys_empty">תג NFC, קוד QR או Bluetooth</string>
+    <string name="home_row_settings">הגדרות</string>
+    <string name="home_row_settings_sub">חסימת הגדרות, התראות, רטט וצליל</string>
+
+    <!-- Badges -->
+    <string name="home_badges_title">הישגים</string>
+    <string name="badge_streak_3">3 ימים ברצף</string>
+    <string name="badge_streak_7">שבוע ברצף</string>
+    <string name="badge_streak_30">חודש ברצף</string>
+    <string name="badge_first_lock">נעילה ראשונה</string>
+    <string name="badge_first_key">פתיחה עם תג/קוד</string>
+    <string name="badge_first_bt">נעילה מהרכב</string>
+
+    <!-- Weekly stats -->
+    <string name="stats_streak_days">ימים ברצף</string>
+    <string name="stats_days_locked">ימים עם נעילה</string>
+    <string name="stats_today">היום</string>
+    <string name="stats_week">השבוע</string>
+    <string name="stats_total">בסך הכל</string>
+    <string name="stats_minutes">%1$d דק׳</string>
+    <string name="stats_attempts">ניסיתם לפתוח אפליקציה חסומה %1$d פעמים היום</string>
+    <string name="stats_attempts_better">פחות מאתמול (%1$d). יפה.</string>
+    <string name="stats_attempts_same">כמו אתמול, גם זה טוב.</string>
+    <string name="stats_share">לשתף את השבוע</string>
+    <string name="stats_share_chooser">שיתוף</string>
+    <string name="stats_share_header">📊 עצור - השבוע שלי</string>
+    <string name="stats_share_streak">ימים ברצף: %1$d</string>
+    <string name="stats_share_days">ימים עם נעילה: %1$d מתוך 7</string>
+    <string name="stats_share_week">זמן נעול השבוע: %1$d דק׳</string>
+    <string name="stats_share_today">היום: %1$s</string>
+
+    <!-- Unlock panel -->
+    <string name="unlock_ready">אפשר לפתוח עכשיו</string>
+    <string name="unlock_button">לפתוח</string>
+    <string name="unlock_hint_has_key">לפתיחה: הצמידו תג לטלפון, או סרקו את קוד ה-QR.</string>
+    <string name="unlock_hint_no_key">לפתיחה צריך תג NFC או קוד QR. הוסיפו ב״איך פותחים״.</string>
+    <string name="unlock_scan_qr">לסרוק QR</string>
+    <string name="unlock_keys_existing">תג וקוד</string>
+    <string name="unlock_keys_add">להוסיף תג/קוד</string>
+    <string name="unlock_nfc_hint">תג NFC: פתחו את עצור והצמידו את התג לגב הטלפון.</string>
+
+    <string name="emergency_hold_prompt">חירום? לחצו והחזיקו</string>
+
+    <string name="emergency_holding">תמשיכו להחזיק…</string>
+
+    <!-- Duration formatting -->
+    <string name="dur_hours_minutes">%1$d ש׳ %2$d דק׳</string>
+    <string name="dur_minutes">%1$d דק׳</string>
+
+    <!-- Lock screen (hard block) -->
+    <string name="lock_title">נעול</string>
+    <string name="lock_body_app">%1$s סגורה עכשיו.\nלא צריך להתווכח עם עצמכם.</string>
+    <string name="lock_body_generic">מה שנעלתם סגור עכשיו.\nלא צריך להתווכח עם עצמכם.</string>
+    <string name="lock_body_protection">המסך הזה נעול כדי שלא תוכלו לכבות את עצור באמצע נעילה.\nשאר ההגדרות פתוחות כרגיל.</string>
+    <string name="lock_hint_tap">לפתיחה: פתחו את עצור ולחצו ״לפתוח״.</string>
+    <string name="lock_hint_key">לפתיחה: תג NFC או סריקת QR.</string>
+    <string name="lock_hint_none">לפתיחה: תג/קוד, או שחרור החירום למטה.</string>
+    <string name="lock_home_button">חזרה למסך הבית</string>
+
+    <!-- Vault time labels -->
+    <string name="vault_until_key">נפתח רק עם תג או קוד</string>
+    <string name="vault_time_left">נותרו %1$s · נגמר ב-%2$s</string>
+
+    <!-- Gentle pause -->
+    <string name="gentle_kicker">רגע לפני שנכנסים</string>
+    <string name="gentle_title">עצירה קצרה</string>
+    <string name="gentle_body">ניסיתם לפתוח את %1$s.\nעשר שניות, ואז תחליטו באמת.</string>
+    <string name="gentle_home">לא עכשיו, חזרה הביתה</string>
+    <string name="gentle_wait">כניסה בכל זאת (עוד %1$d שניות)</string>
+    <string name="gentle_enter">להיכנס בכל זאת ל-5 דקות</string>
+
+    <!-- Apps screen -->
+    <string name="apps_title">מה חוסמים</string>
+    <string name="apps_done">סיום</string>
+    <string name="apps_mode_blocklist">רק מה שסימנתי</string>
+    <string name="apps_mode_allowlist">הכל חוץ ממה שסימנתי</string>
+    <string name="apps_mode_allowlist_hint">בנעילה נחסם הכול, חוץ מהאפליקציות שסימנתם. טלפון ומסך הבית תמיד פתוחים.</string>
+    <string name="apps_mode_blocklist_hint">סמנו אפליקציות, רק הן ייחסמו בזמן נעילה.</string>
+    <string name="apps_gentle_hint">על אפליקציה חסומה: ״רך״ = אזהרה, ״קשיח״ = חסימה מלאה.</string>
+    <string name="apps_quick_pick">סימון מהיר</string>
+    <string name="apps_quick_added">נוספו %1$d אפליקציות (%2$s).</string>
+    <string name="apps_safety_show">מה אף פעם לא נחסם?</string>
+    <string name="apps_safety_hide">להסתיר</string>
+    <string name="apps_safety_hard_title">מוגנות תמיד</string>
+    <string name="apps_safety_hard_body">טלפון, חירום ומערכת. אי אפשר לחסום את אלו, בשום מצב.</string>
+    <string name="apps_safety_default_title">פתוחות כברירת מחדל</string>
+    <string name="apps_safety_default_body">ניווט והודעות נשארים פתוחים גם בזמן נעילה. רוצים נעילה קשיחה יותר? אפשר לחסום כל אחת בנפרד.</string>
+    <string name="apps_safety_open">פתוח</string>
+    <string name="apps_safety_blocked">חסום</string>
+    <string name="apps_search">חיפוש אפליקציה…</string>
+    <string name="apps_loading">טוען את האפליקציות…</string>
+    <string name="apps_none_match">אין אפליקציה בשם הזה.</string>
+    <string name="apps_empty_title">עדיין לא בחרתם מה לנעול</string>
+    <string name="apps_empty_body">סמנו אפליקציות מהרשימה, או לחצו על סימון מהיר למעלה (רשתות, וידאו…).</string>
+    <string name="apps_gentle_soft">רך</string>
+    <string name="apps_gentle_hard">קשיח</string>
+    <string name="apps_gentle_default">רגיל</string>
+    <string name="apps_locked_no_change">בזמן נעילה אי אפשר לשנות את זה.</string>
+    <string name="apps_locked_no_list_change">בזמן נעילה אי אפשר לשנות את הרשימה.</string>
+
+    <string name="apps_quick_removed">הוסרו %1$d אפליקציות (%2$s).</string>
+    <string name="apps_clear_all">לנקות הכל</string>
+    <string name="apps_cleared">הבחירה נוקתה.</string>
+    <string name="apps_selected_count">%1$d נבחרו</string>
+
+    <!-- App categories -->
+    <string name="cat_social">רשתות חברתיות</string>
+    <string name="cat_video">וידאו</string>
+    <string name="cat_games">משחקים</string>
+    <string name="cat_news">חדשות / גלישה</string>
+
+    <!-- Schedule screen -->
+    <string name="sched_title">שעות קבועות</string>
+    <string name="sched_back">חזרה</string>
+    <string name="sched_intro">מתי לנעול לבד, בלי ללחוץ. באמצע, פתיחה רק עם תג/קוד או שחרור חירום.</string>
+    <string name="sched_shabbat_title">🕯 שבת</string>
+    <string name="sched_shabbat_body">יום מנוחה כבר קיים אצלנו. ננעל מכניסת שבת עד צאתה, לפי שקיעה בירושלים. בלי רשת ובלי מיקום.</string>
+    <string name="sched_shabbat_next">השבת הקרובה: כניסה %1$s · יציאה %2$s</string>
+    <string name="sched_shabbat_locked">בזמן נעילה אי אפשר לכבות שבת.</string>
+    <string name="sched_oneoff_title">🕎 תאריך חד-פעמי</string>
+    <string name="sched_oneoff_body">ערב חג, יום הולדת וכו׳, נעילה רק באותו יום.</string>
+    <string name="sched_crosses_midnight">(חוצה חצות)</string>
+    <string name="sched_new_date">תאריך חדש</string>
+    <string name="sched_from">מ־%1$s</string>
+    <string name="sched_to">עד %1$s</string>
+    <string name="sched_ends_next_day">נגמר למחרת (חוצה חצות)</string>
+    <string name="sched_add_date">להוסיף תאריך</string>
+    <string name="sched_empty">עדיין אין שעות קבועות. הוסיפו למטה.</string>
+    <string name="sched_new_hours">שעות חדשות</string>
+    <string name="sched_add">להוסיף</string>
+    <string name="sched_name_hint">שם (ערב פסח, יום הולדת…)</string>
+    <string name="sched_saved">השעות נשמרו. אפשר לראות אותן ב״שעות קבועות״.</string>
+    <string name="sched_locked_no_change">בזמן נעילה אי אפשר לשנות שעות.</string>
+    <string name="sched_shabbat_via_toggle">שבת מופעלת מהמתג במסך ״שעות קבועות״.</string>
+
+    <!-- Preset edit dialog -->
+    <string name="preset_edit_title">עריכת %1$s</string>
+    <string name="preset_days">ימים</string>
+    <string name="preset_hours">שעות (לחיצה משנה ב־30 דק׳)</string>
+    <string name="preset_same_time_error">התחלה וסיום לא יכולים להיות זהים</string>
+    <string name="preset_save">שמירה</string>
+    <string name="preset_cancel">ביטול</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">הגדרות</string>
+    <string name="settings_back">חזרה</string>
+    <string name="settings_intro">איך עצור מתנהג, ומה קורה בזמן נעילה.</string>
+    <string name="settings_during_lock">בזמן נעילה</string>
+    <string name="settings_strict_title">לחסום גם את הגדרות המכשיר</string>
+    <string name="settings_strict_sub">חוסם את מסך הנגישות ואת מסך פרטי האפליקציה בזמן נעילה, כדי שיהיה קשה לכבות או להסיר את עצור. שאר ההגדרות, כולל Bluetooth ו-Wi-Fi, נשארות פתוחות.</string>
+    <string name="settings_gentle_title">רק להזהיר, לא לחסום לגמרי</string>
+    <string name="settings_gentle_sub">כשפותחים אפליקציה חסומה: מסך קצר עם אפשרות להיכנס בכל זאת.</string>
+    <string name="settings_notif_title">לא להראות התראות מאפליקציות חסומות</string>
+    <string name="settings_notif_on">פועל. ההתראות יופיעו שוב אחרי שהנעילה נגמרת.</string>
+    <string name="settings_notif_off">בזמן נעילה לא תקפצנה התראות מהאפליקציות שחסמתם.</string>
+    <string name="settings_batt_title">לא לתת לטלפון לכבות את עצור</string>
+    <string name="settings_batt_on">פועל. עצור נשאר פעיל ברקע.</string>
+    <string name="settings_batt_off">מומלץ: אחרת חיסכון בסוללה עלול לעצור את החסימה.</string>
+    <string name="settings_feedback">צליל ורטט</string>
+    <string name="settings_haptics_title">רטט כשנועלים או פותחים</string>
+    <string name="settings_haptics_sub">רטט חזק יותר בנעילה, עדין יותר בפתיחה.</string>
+    <string name="settings_sound_title">צליל כשנועלים או פותחים</string>
+    <string name="settings_sound_sub">צליל קצר שונה לנעילה ולפתיחה.</string>
+    <string name="settings_motion_title">פחות אנימציה</string>
+    <string name="settings_motion_sub">מסך הנעילה זז פחות. מתאים גם אם בטלפון כבוי ״הנפשות״.</string>
+    <string name="settings_enabled">פועל</string>
+    <string name="settings_enable">להפעלה</string>
+    <string name="settings_locked_strict">אי אפשר לכבות את זה בזמן נעילה.</string>
+    <string name="settings_locked_change">אי אפשר לשנות את זה בזמן נעילה.</string>
+    <string name="settings_locked_generic">אי אפשר לשנות הגדרות בזמן נעילה.</string>
+
+    <!-- Guarded Settings screen notice -->
+    <string name="notice_settings_guarded">המסך הזה נעול בזמן נעילה, כדי שלא תוכלו לכבות את עצור. שאר ההגדרות פתוחות, כולל Bluetooth ו-Wi-Fi.\nצריך באמת לצאת? החזיקו את כפתור החירום במסך הנעילה.</string>
+
+    <!-- Strict mode confirmation -->
+    <string name="strict_confirm_title">לפני שמדליקים</string>
+    <string name="strict_confirm_body">בזמן נעילה לא תוכלו לכבות את עצור ולא להסיר אותו. היציאה המוקדמת היחידה היא שחרור חירום, שנפתח בלחיצה ארוכה של חמש שניות.\n\nשאר ההגדרות נשארות פתוחות, כולל Bluetooth ו-Wi-Fi. שימו לב שבחלק מהמכשירים החסימה לא מושלמת, אז זה מקשה על היציאה אבל לא מונע אותה לגמרי.</string>
+    <string name="strict_confirm_enable">להדליק</string>
+    <string name="strict_confirm_cancel">ביטול</string>
+
+    <!-- Tips carousel -->
+    <string name="tips_title">טיפים</string>
+    <string name="tips_next">הבא</string>
+    <string name="tips_got_it">הבנתי</string>
+    <string name="tips_close">סגור</string>
+    <string name="tip_open_title">איך פותחים</string>
+    <string name="tip_open_body">נעלתם לזמן מוגבל? לחצו ״לפתוח״ במסך הבית. נעלתם עד תג/קוד? הצמידו תג או סרקו QR. חירום: לחיצה ארוכה של חמש שניות.</string>
+    <string name="tip_shabbat_title">שבת דיגיטלית, גם באמצע השבוע</string>
+    <string name="tip_shabbat_body">יום מנוחה כבר קיים אצלנו. קבעו ערב אחד בשבוע שבו הטלפון פשוט נעול, ותנו לזה לקרות לבד בלי להחליט כל פעם מחדש.</string>
+    <string name="tip_bt_title">Bluetooth של הרכב</string>
+    <string name="tip_bt_body">אפשר לנעול אוטומטית כשהרכב מתחבר. רק מכשירים שסימנתם ב״איך פותחים״, לא על כל Bluetooth.</string>
+    <string name="tip_emergency_title">שחרור חירום</string>
+    <string name="tip_emergency_body">אם באמת צריך לצאת: לחצו והחזיקו את כפתור החירום חמש שניות. מספיק ארוך כדי שלא יקרה בטעות, ומספיק קצר כדי שחירום אמיתי לא יהיה בעיה.</string>
+
+    <!-- Widget -->
+    <string name="widget_locked">נעול</string>
+    <string name="widget_lock_action">לנעול</string>
+    <string name="widget_title_locked">עצור נעול</string>
+    <string name="widget_title_open">עצור</string>
+    <string name="widget_until_key">עד תג/קוד</string>
+    <string name="widget_today_streak">היום %1$d דק׳ · רצף %2$d</string>
+    <string name="widget_streak_today">רצף %1$d · %2$d דק׳ היום</string>
+    <string name="widget_today_only">%1$d דק׳ היום</string>
+    <string name="widget_tap_to_lock">לחצו כדי לנעול</string>
+
+    <!-- Ongoing notification -->
+    <string name="notif_channel_name">נעילה פעילה</string>
+    <string name="notif_channel_desc">מוצג כשיש נעילה והאפליקציות חסומות</string>
+    <string name="notif_title">עצור נועל עכשיו</string>
+    <string name="notif_until_key">נפתח רק עם תג או קוד</string>
+    <string name="notif_countdown">זמן שנותר עד הפתיחה</string>
+
+    <!-- Quick settings tile -->
+    <string name="tile_label">עצור</string>
+    <string name="tile_locked">נעול</string>
+    <string name="tile_open">פתוח</string>
+
+    <!-- Keys / NFC / QR messages -->
+    <string name="key_tag_saved_written">התג נשמר. הצמידו אותו כדי לנעול או לפתוח.</string>
+    <string name="key_tag_saved">התג נשמר. מעכשיו הוא פותח ונועל.</string>
+    <string name="key_no_tag_yet">עדיין אין תג. הוסיפו ב״איך פותחים״.</string>
+    <string name="key_locked_now">ננעל.</string>
+    <string name="key_opened_now">נפתח.</string>
+    <string name="key_wrong_tag">זה לא התג ששמרתם.</string>
+    <string name="key_unknown_code">הקוד הזה לא מוכר.</string>
+    <string name="key_tag_default_label">תג %1$d</string>
+    <string name="key_tag_fallback_label">תג</string>
+
+    <!-- Keys screen -->
+    <string name="keys_title">איך פותחים</string>
+    <string name="keys_back">חזרה</string>
+    <string name="keys_intro">תג, קוד QR או Bluetooth שפותחים (ונועלים) את הנעילה. שמרו רחוק מהטלפון.</string>
+    <string name="keys_empty_title">עדיין אין תג או קוד</string>
+    <string name="keys_empty_body">חברו תג NFC או צרו קוד QR. שמרו רחוק מהטלפון, כדי שלא יהיה קל מדי לפתוח.</string>
+    <string name="keys_nfc_title">תג NFC</string>
+    <string name="keys_nfc_register">הצמידו עכשיו את התג לגב הטלפון.</string>
+    <string name="keys_nfc_one">תג אחד שמור. הצמדה אליו נועלת או פותחת.</string>
+    <string name="keys_nfc_many">%1$d תגים שמורים.</string>
+    <string name="keys_nfc_none">מתאים לכל תג או מדבקת NFC (גם כרטיס ישן).</string>
+    <string name="keys_nfc_cancel">ביטול</string>
+    <string name="keys_nfc_add_first">לחבר תג</string>
+    <string name="keys_nfc_add_more">להוסיף תג</string>
+    <string name="keys_nfc_clear">למחוק הכל</string>
+    <string name="keys_save">שמירה</string>
+    <string name="keys_cancel">ביטול</string>
+    <string name="keys_last_used">שימוש אחרון: %1$s</string>
+    <string name="keys_never_used">עדיין לא השתמשתם</string>
+    <string name="keys_rename">לשנות שם</string>
+    <string name="keys_qr_title">קוד QR</string>
+    <string name="keys_qr_have">יש קוד. הדפיסו, שימו במקום קבוע, וסרקו כשרוצים לנעול או לפתוח.</string>
+    <string name="keys_qr_last_used">\nשימוש אחרון: %1$s</string>
+    <string name="keys_qr_none">יוצרים קוד, מדפיסים, וסורקים כשצריך.</string>
+    <string name="keys_qr_create">ליצור קוד</string>
+    <string name="keys_qr_scan">לסרוק</string>
+    <string name="keys_qr_hide">להסתיר</string>
+    <string name="keys_qr_show">להציג את הקוד</string>
+    <string name="keys_qr_content_desc">קוד QR של עצור</string>
+    <string name="keys_qr_print_hint">צלמו מסך או הדפיסו. אל תשאירו ליד הטלפון.</string>
+    <string name="keys_qr_delete">למחוק את הקוד</string>
+    <string name="keys_bt_title">Bluetooth (למשל הרכב)</string>
+    <string name="keys_bt_body">רק מכשירים שתסמנו כאן. כשהם מתחברים, ננעל. לא על כל Bluetooth.</string>
+    <string name="keys_bt_lock_on_connect">לנעול כשהמכשיר מתחבר</string>
+    <string name="keys_bt_unlock_on_disconnect">לפתוח כשהמכשיר מתנתק</string>
+    <string name="keys_bt_unlock_hint">למשל: יורדים מהרכב והנעילה נגמרת.</string>
+    <string name="keys_bt_duration">לכמה זמן לנעול בחיבור:</string>
+    <string name="keys_bt_hour">שעה</string>
+    <string name="keys_bt_two_hours">שעתיים</string>
+    <string name="keys_bt_until_key">עד תג/קוד</string>
+    <string name="keys_bt_permission">צריך אישור Bluetooth כדי לראות את המכשירים. לחצו כאן.</string>
+    <string name="keys_bt_none">אין מכשירים מחוברים. חברו קודם רכב או אוזניות בהגדרות Bluetooth של הטלפון, ואז סמנו כאן.</string>
+    <string name="keys_bt_marked">✓ מסומן</string>
+    <string name="keys_bt_mark">לסמן</string>
+    <string name="keys_bt_active">פעיל</string>
+
+    <!-- Buy a ready-made key -->
+    <string name="keys_buy_title">אין לכם עדיין תג?</string>
+    <string name="keys_buy_body">אפשר להזמין תג עצור מוכן, מודפס ומוגדר מראש. ₪50 כולל משלוח.</string>
+    <string name="keys_buy_button">להזמין תג (₪50)</string>
+
+    <string name="keys_buy_message">היי! אשמח להזמין תג עצור מוכן (₪50).</string>
+    <string name="keys_buy_subject">הזמנת תג עצור</string>
+    <string name="keys_buy_no_app">לא נמצאה אפליקציית WhatsApp או מייל. כתבו ל-%1$s.</string>
+
+    <!-- Shortcuts / toasts -->
+    <string name="msg_already_locked">כבר נעול.</string>
+    <string name="msg_pick_apps_first">קודם בוחרים אילו אפליקציות לחסום.</string>
+    <string name="msg_locked_for_hour">ננעל לשעה.</string>
+    <string name="msg_need_key_first">קודם מוסיפים תג NFC או קוד QR.</string>
+    <string name="msg_locked_until_key">ננעל, ייפתח רק עם תג או קוד.</string>
+    <string name="msg_need_key_for_untimed">לנעילה בלי שעה מוגדרת צריך קודם תג NFC או קוד QR.</string>
+    <string name="msg_locked_open_first">בזמן נעילה אי אפשר לשנות את זה. פתחו קודם.</string>
+
+    <!-- Bluetooth -->
+    <string name="bt_no_apps">מכשיר Bluetooth מחובר, אבל אין אפליקציות לחסימה.</string>
+    <string name="bt_locked_because">ננעל בגלל %1$s</string>
+    <string name="bt_opened_disconnect">נפתח, %1$s התנתק</string>
+
+    <!-- What is new -->
+    <string name="whatsnew_title">מה חדש ב-%1$s</string>
+    <string name="whatsnew_line_1">ניווט והודעות נשארים פתוחים בזמן נעילה</string>
+    <string name="whatsnew_line_2">ניסוח ברור יותר בכל המסכים</string>
+    <string name="whatsnew_line_3">רטט וצליל שונים לנעילה ולפתיחה</string>
+    <string name="whatsnew_got_it">הבנתי</string>
+
+    <!-- Crash screen -->
+    <string name="crash_title">עצור נפל. צלמו מסך ושלחו לי 👇</string>
+    <string name="crash_retry">ניקוי וניסיון חוזר</string>
+
+    <!-- Day-of-week initials (Sunday first) -->
+    <string-array name="day_letters">
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ה</item>
+        <item>ו</item>
+        <item>ש</item>
+    </string-array>
+
+    <!-- Safety package labels -->
+    <string name="safety_dialer_aosp">טלפון (AOSP)</string>
+    <string name="safety_dialer_google">טלפון (Google)</string>
+    <string name="safety_dialer_samsung">טלפון (Samsung)</string>
+    <string name="safety_telephonyui_samsung">ממשק שיחות Samsung</string>
+    <string name="safety_emergency">חירום</string>
+    <string name="safety_systemui">ממשק המערכת</string>
+    <string name="safety_settings">הגדרות</string>
+    <string name="safety_maps_google">מפות Google</string>
+    <string name="safety_waze">Waze</string>
+    <string name="safety_moovit">Moovit</string>
+    <string name="safety_mms">הודעות</string>
+    <string name="safety_messages_google">הודעות Google</string>
+    <string name="safety_messages_samsung">הודעות Samsung</string>
+    <string name="safety_kind_calls">שיחות</string>
+    <string name="safety_kind_emergency">חירום</string>
+    <string name="safety_kind_system">מערכת</string>
+    <string name="safety_kind_navigation">ניווט</string>
+    <string name="safety_kind_messaging">הודעות</string>
+
+</resources>

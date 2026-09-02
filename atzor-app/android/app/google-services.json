@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "895772997124",
+    "project_id": "atzor-stop",
+    "storage_bucket": "atzor-stop.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895772997124:android:990f6cb90915d5948ea751",
+        "android_client_info": {
+          "package_name": "com.atzor.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-ssglXy-p9ZmeD8IkNbMZ1Jr5K59z9gQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

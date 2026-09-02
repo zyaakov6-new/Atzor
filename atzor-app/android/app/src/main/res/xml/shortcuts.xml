@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="lock_hour"
+        android:enabled="true"
+        android:icon="@drawable/ic_tile"
+        android:shortcutShortLabel="@string/shortcut_hour_short"
+        android:shortcutLongLabel="@string/shortcut_hour_long">
+        <intent
+            android:action="app.atzor.action.LOCK_HOUR"
+            android:targetPackage="com.atzor.app"
+            android:targetClass="app.atzor.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="lock_key"
+        android:enabled="true"
+        android:icon="@drawable/ic_tile"
+        android:shortcutShortLabel="@string/shortcut_key_short"
+        android:shortcutLongLabel="@string/shortcut_key_long">
+        <intent
+            android:action="app.atzor.action.LOCK_KEY"
+            android:targetPackage="com.atzor.app"
+            android:targetClass="app.atzor.MainActivity" />
+    </shortcut>
+</shortcuts>

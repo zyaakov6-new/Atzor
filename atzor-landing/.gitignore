@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+# Vercel
+.vercel
+# Env / secrets — never commit these
+.env
+.env.*
+!.env.example
+# OS
+.DS_Store
+# Logs
+*.log
+.claude/settings.local.json

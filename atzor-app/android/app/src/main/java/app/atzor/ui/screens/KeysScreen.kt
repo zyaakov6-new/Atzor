@@ -4,6 +4,7 @@ import android.Manifest
 import android.bluetooth.BluetoothManager
 import android.content.pm.PackageManager
 import android.os.Build
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
@@ -31,6 +32,7 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -92,10 +94,21 @@ private fun orderKeyUri(message: String, subject: String): android.net.Uri =
     }
 
 @Composable
-fun KeysScreen(modifier: Modifier = Modifier, onBack: () -> Unit) {
+fun KeysScreen(modifier: Modifier = Modifier, firstRun: Boolean = false, onBack: () -> Unit) {
     val state by Store.state.collectAsState()
     val registerMode by UiBus.nfcRegisterMode.collectAsState()
     var showQr by remember { mutableStateOf(false) }
+
+    if (firstRun) {
+        BackHandler(onBack = onBack)
+        LaunchedEffect(Unit) { UiBus.nfcRegisterMode.value = true }
+        LaunchedEffect(state.nfcTagIds) {
+            if (state.nfcTagIds.isNotEmpty()) {
+                UiBus.nfcRegisterMode.value = false
+                Store.setTapInstructionSeen()
+            }
+        }
+    }
     val context = LocalContext.current
     var btPermissionOk by remember {
         mutableStateOf(
@@ -121,7 +134,7 @@ fun KeysScreen(modifier: Modifier = Modifier, onBack: () -> Unit) {
         ) {
             Text(stringResource(R.string.keys_title), style = MaterialTheme.typography.headlineMedium, color = Cream)
             Text(
-                stringResource(R.string.keys_back),
+                stringResource(if (firstRun) R.string.qs_later else R.string.keys_back),
                 style = MaterialTheme.typography.labelLarge,
                 color = CoralDeep,
                 modifier = Modifier.clickable(onClick = onBack).padding(8.dp),
